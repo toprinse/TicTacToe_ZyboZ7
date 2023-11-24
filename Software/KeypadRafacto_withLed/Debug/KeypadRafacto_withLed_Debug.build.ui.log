@@ -1,0 +1,32 @@
+2023-11-23T18:42:06.472283300255-18:42:06 **** Incremental Build of configuration Debug for project KeypadRafacto_withLed ****
+000-make all 
+000-make --no-print-directory pre-build
+000-a9-linaro-pre-build-step
+000-' '
+000-make --no-print-directory main-build
+000-'Building file: ../src/helloworld.c'
+000-'Invoking: ARM v7 gcc compiler'
+000-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IH:/5A/CE514/ZyboZ7/workspace/TestKeypad/export/TestKeypad/sw/TestKeypad/standalone_domain/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+000-In file included from ../src/helloworld.c:7:
+000/TestKeypad/export/TestKeypad/sw/TestKeypad/standalone_domain/bspinclude/include/xbasic_types.h118-1-1#warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]1-H:/5A/CE514/ZyboZ7/workspace/TestKeypad/export/TestKeypad/sw/TestKeypad/standalone_domain/bspinclude/include/xbasic_types.h:118:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+000- #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+000-  ^~~~~~~
+000/TestKeypad/export/TestKeypad/sw/TestKeypad/standalone_domain/bspinclude/include/xbasic_types.h119-1-1#warning Please refer the Standalone BSP UG647 for further details [-Wcpp]1-H:/5A/CE514/ZyboZ7/workspace/TestKeypad/export/TestKeypad/sw/TestKeypad/standalone_domain/bspinclude/include/xbasic_types.h:119:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+000- #warning  Please refer the Standalone BSP UG647 for further details
+000-  ^~~~~~~
+000-'Finished building: ../src/helloworld.c'
+000-' '
+000-'Building target: KeypadRafacto_withLed.elf'
+000-'Invoking: ARM v7 gcc linker'
+000-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LH:/5A/CE514/ZyboZ7/workspace/TestKeypad/export/TestKeypad/sw/TestKeypad/standalone_domain/bsplib/lib -o "KeypadRafacto_withLed.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+000-'Finished building target: KeypadRafacto_withLed.elf'
+000-' '
+000-'Invoking: ARM v7 Print Size'
+000-arm-none-eabi-size KeypadRafacto_withLed.elf  |tee "KeypadRafacto_withLed.elf.size"
+000-   text	   data	    bss	    dec	    hex	filename
+000-  64288	   2584	  23392	  90264	  16098	KeypadRafacto_withLed.elf
+000-'Finished building: KeypadRafacto_withLed.elf.size'
+000-' '
+00255-
+18:42:08 Build Finished (took 1s.846ms)
+

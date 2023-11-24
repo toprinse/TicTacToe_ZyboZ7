@@ -1,0 +1,464 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Thu Nov 23 12:56:48 2023
+# Process ID: 13716
+# Current directory: H:/5A/CE514/ZyboZ7/MatriceZyboZ7Topr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1604 H:\5A\CE514\ZyboZ7\MatriceZyboZ7Topr\MatriceZyboZ7.xpr
+# Log file: H:/5A/CE514/ZyboZ7/MatriceZyboZ7Topr/vivado.log
+# Journal file: H:/5A/CE514/ZyboZ7/MatriceZyboZ7Topr\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project H:/5A/CE514/ZyboZ7/MatriceZyboZ7Topr/MatriceZyboZ7.xpr
+INFO: [Project 1-313] Project file moved from 'H:/5A/CE514/ZyboZ7/MatriceZyboZ7' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'h:/5A/CE514/ip_repo/my_matrice_LED_1.0'.
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: : Unexpected end of message
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file h:/CE515/vivado-library-zmod-v1-2019.1-2/vivado-library-zmod-v1-2019.1-2/ip/AXI_DPTI_1.0/component.xml. This IP will not be included in the IP Catalog.
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: : Unexpected end of message
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file h:/CE515/vivado-library-zmod-v1-2019.1-2/vivado-library-zmod-v1-2019.1-2/ip/axi_dynclk_v1_0/component.xml. This IP will not be included in the IP Catalog.
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: : Unexpected end of message
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file h:/CE515/vivado-library-zmod-v1-2019.1-2/vivado-library-zmod-v1-2019.1-2/ip/axi_i2s_adi_1.2/component.xml. This IP will not be included in the IP Catalog.
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: : Unexpected end of message
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file h:/CE515/vivado-library-zmod-v1-2019.1-2/vivado-library-zmod-v1-2019.1-2/ip/axi_ps2_1.0/component.xml. This IP will not be included in the IP Catalog.
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: : Unexpected end of message
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file h:/CE515/vivado-library-zmod-v1-2019.1-2/vivado-library-zmod-v1-2019.1-2/ip/dvi2rgb/component.xml. This IP will not be included in the IP Catalog.
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: : Unexpected end of message
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file h:/CE515/vivado-library-zmod-v1-2019.1-2/vivado-library-zmod-v1-2019.1-2/ip/hls_contrast_stretch_1_0/component.xml. This IP will not be included in the IP Catalog.
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: : Unexpected end of message
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file h:/CE515/vivado-library-zmod-v1-2019.1-2/vivado-library-zmod-v1-2019.1-2/ip/hls_gamma_correction_1_0/component.xml. This IP will not be included in the IP Catalog.
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: : Unexpected end of message
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file h:/CE515/vivado-library-zmod-v1-2019.1-2/vivado-library-zmod-v1-2019.1-2/ip/hls_saturation_enhance_1_0/component.xml. This IP will not be included in the IP Catalog.
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: : Unexpected end of message
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file h:/CE515/vivado-library-zmod-v1-2019.1-2/vivado-library-zmod-v1-2019.1-2/ip/MotorFeedback_1.0/component.xml. This IP will not be included in the IP Catalog.
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: : Unexpected end of message
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file h:/CE515/vivado-library-zmod-v1-2019.1-2/vivado-library-zmod-v1-2019.1-2/ip/Pmods/PmodACL2_v1_0/component.xml. This IP will not be included in the IP Catalog.
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: : Unexpected end of message
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file h:/CE515/vivado-library-zmod-v1-2019.1-2/vivado-library-zmod-v1-2019.1-2/ip/Pmods/PmodACL_v1_0/component.xml. This IP will not be included in the IP Catalog.
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: : Unexpected end of message
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file h:/CE515/vivado-library-zmod-v1-2019.1-2/vivado-library-zmod-v1-2019.1-2/ip/Pmods/PmodAD1_v1_0/component.xml. This IP will not be included in the IP Catalog.
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: : Unexpected end of message
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file h:/CE515/vivado-library-zmod-v1-2019.1-2/vivado-library-zmod-v1-2019.1-2/ip/Pmods/PmodAD2_v1_0/component.xml. This IP will not be included in the IP Catalog.
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: : Unexpected end of message
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file h:/CE515/vivado-library-zmod-v1-2019.1-2/vivado-library-zmod-v1-2019.1-2/ip/Pmods/PmodAD5_v1_0/component.xml. This IP will not be included in the IP Catalog.
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: : Unexpected end of message
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file h:/CE515/vivado-library-zmod-v1-2019.1-2/vivado-library-zmod-v1-2019.1-2/ip/Pmods/PmodALS_v1_0/component.xml. This IP will not be included in the IP Catalog.
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: : Unexpected end of message
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file h:/CE515/vivado-library-zmod-v1-2019.1-2/vivado-library-zmod-v1-2019.1-2/ip/Pmods/PmodAMP2_v1_0/component.xml. This IP will not be included in the IP Catalog.
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: : Unexpected end of message
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file h:/CE515/vivado-library-zmod-v1-2019.1-2/vivado-library-zmod-v1-2019.1-2/ip/Pmods/PmodAQS_v1_0/component.xml. This IP will not be included in the IP Catalog.
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: : Unexpected end of message
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file h:/CE515/vivado-library-zmod-v1-2019.1-2/vivado-library-zmod-v1-2019.1-2/ip/Pmods/PmodBT2_v1_0/component.xml. This IP will not be included in the IP Catalog.
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: : Unexpected end of message
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file h:/CE515/vivado-library-zmod-v1-2019.1-2/vivado-library-zmod-v1-2019.1-2/ip/Pmods/PmodCAN_v1_0/component.xml. This IP will not be included in the IP Catalog.
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: : Unexpected end of message
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file h:/CE515/vivado-library-zmod-v1-2019.1-2/vivado-library-zmod-v1-2019.1-2/ip/Pmods/PmodCLS_v1_0/component.xml. This IP will not be included in the IP Catalog.
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: : Unexpected end of message
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file h:/CE515/vivado-library-zmod-v1-2019.1-2/vivado-library-zmod-v1-2019.1-2/ip/Pmods/PmodCMPS2_v1_0/component.xml. This IP will not be included in the IP Catalog.
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: : Unexpected end of message
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file h:/CE515/vivado-library-zmod-v1-2019.1-2/vivado-library-zmod-v1-2019.1-2/ip/Pmods/PmodCOLOR_v1_0/component.xml. This IP will not be included in the IP Catalog.
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: : Unexpected end of message
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file h:/CE515/vivado-library-zmod-v1-2019.1-2/vivado-library-zmod-v1-2019.1-2/ip/Pmods/PmodDA1_v1_0/component.xml. This IP will not be included in the IP Catalog.
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: : Unexpected end of message
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file h:/CE515/vivado-library-zmod-v1-2019.1-2/vivado-library-zmod-v1-2019.1-2/ip/Pmods/PmodDHB1_v1_0/component.xml. This IP will not be included in the IP Catalog.
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: : Unexpected end of message
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file h:/CE515/vivado-library-zmod-v1-2019.1-2/vivado-library-zmod-v1-2019.1-2/ip/Pmods/PmodDPG1_v1_0/component.xml. This IP will not be included in the IP Catalog.
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: : Unexpected end of message
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file h:/CE515/vivado-library-zmod-v1-2019.1-2/vivado-library-zmod-v1-2019.1-2/ip/Pmods/PmodENC_v1_0/component.xml. This IP will not be included in the IP Catalog.
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: : Unexpected end of message
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file h:/CE515/vivado-library-zmod-v1-2019.1-2/vivado-library-zmod-v1-2019.1-2/ip/Pmods/PmodESP32_v1_0/component.xml. This IP will not be included in the IP Catalog.
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: : Unexpected end of message
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file h:/CE515/vivado-library-zmod-v1-2019.1-2/vivado-library-zmod-v1-2019.1-2/ip/Pmods/PmodGPIO_v1_0/component.xml. This IP will not be included in the IP Catalog.
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: : Unexpected end of message
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file h:/CE515/vivado-library-zmod-v1-2019.1-2/vivado-library-zmod-v1-2019.1-2/ip/Pmods/PmodGPS_v1_1/component.xml. This IP will not be included in the IP Catalog.
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: : Unexpected end of message
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file h:/CE515/vivado-library-zmod-v1-2019.1-2/vivado-library-zmod-v1-2019.1-2/ip/Pmods/PmodGYRO_v1_0/component.xml. This IP will not be included in the IP Catalog.
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: : Unexpected end of message
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file h:/CE515/vivado-library-zmod-v1-2019.1-2/vivado-library-zmod-v1-2019.1-2/ip/Pmods/PmodHYGRO_v1_0/component.xml. This IP will not be included in the IP Catalog.
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: : Unexpected end of message
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file h:/CE515/vivado-library-zmod-v1-2019.1-2/vivado-library-zmod-v1-2019.1-2/ip/Pmods/PmodJSTK2_v1_0/component.xml. This IP will not be included in the IP Catalog.
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: : Unexpected end of message
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file h:/CE515/vivado-library-zmod-v1-2019.1-2/vivado-library-zmod-v1-2019.1-2/ip/Pmods/PmodKYPD_v1_0/component.xml. This IP will not be included in the IP Catalog.
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: : Unexpected end of message
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file h:/CE515/vivado-library-zmod-v1-2019.1-2/vivado-library-zmod-v1-2019.1-2/ip/Pmods/PmodMTDS_v1_0/component.xml. This IP will not be included in the IP Catalog.
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: : Unexpected end of message
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file h:/CE515/vivado-library-zmod-v1-2019.1-2/vivado-library-zmod-v1-2019.1-2/ip/Pmods/PmodNAV_v1_0/component.xml. This IP will not be included in the IP Catalog.
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: : Unexpected end of message
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file h:/CE515/vivado-library-zmod-v1-2019.1-2/vivado-library-zmod-v1-2019.1-2/ip/Pmods/pmodOLEDrgb_v1_0/component.xml. This IP will not be included in the IP Catalog.
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: : Unexpected end of message
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file h:/CE515/vivado-library-zmod-v1-2019.1-2/vivado-library-zmod-v1-2019.1-2/ip/Pmods/PmodOLED_v1_0/component.xml. This IP will not be included in the IP Catalog.
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: : Unexpected end of message
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file h:/CE515/vivado-library-zmod-v1-2019.1-2/vivado-library-zmod-v1-2019.1-2/ip/Pmods/PmodPIR_v1_0/component.xml. This IP will not be included in the IP Catalog.
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: : Unexpected end of message
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file h:/CE515/vivado-library-zmod-v1-2019.1-2/vivado-library-zmod-v1-2019.1-2/ip/Pmods/PmodR2R_v1_0/component.xml. This IP will not be included in the IP Catalog.
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: : Unexpected end of message
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file h:/CE515/vivado-library-zmod-v1-2019.1-2/vivado-library-zmod-v1-2019.1-2/ip/Pmods/PmodRTCC_v1_0/component.xml. This IP will not be included in the IP Catalog.
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: : Unexpected end of message
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file h:/CE515/vivado-library-zmod-v1-2019.1-2/vivado-library-zmod-v1-2019.1-2/ip/Pmods/PmodSD_v1_0/component.xml. This IP will not be included in the IP Catalog.
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: : Unexpected end of message
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file h:/CE515/vivado-library-zmod-v1-2019.1-2/vivado-library-zmod-v1-2019.1-2/ip/Pmods/PmodSF3_v1_0/component.xml. This IP will not be included in the IP Catalog.
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: : Unexpected end of message
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file h:/CE515/vivado-library-zmod-v1-2019.1-2/vivado-library-zmod-v1-2019.1-2/ip/Pmods/PmodTC1_v1_0/component.xml. This IP will not be included in the IP Catalog.
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: : Unexpected end of message
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file h:/CE515/vivado-library-zmod-v1-2019.1-2/vivado-library-zmod-v1-2019.1-2/ip/Pmods/PmodTMP3_v1_0/component.xml. This IP will not be included in the IP Catalog.
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: : Unexpected end of message
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file h:/CE515/vivado-library-zmod-v1-2019.1-2/vivado-library-zmod-v1-2019.1-2/ip/Pmods/PmodWIFI_v1_0/component.xml. This IP will not be included in the IP Catalog.
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: : Unexpected end of message
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file h:/CE515/vivado-library-zmod-v1-2019.1-2/vivado-library-zmod-v1-2019.1-2/ip/Pmods/Pmod_Bridge_v1_1/component.xml. This IP will not be included in the IP Catalog.
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: : Unexpected end of message
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file h:/CE515/vivado-library-zmod-v1-2019.1-2/vivado-library-zmod-v1-2019.1-2/ip/PWM_1.0/component.xml. This IP will not be included in the IP Catalog.
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: : Unexpected end of message
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file h:/CE515/vivado-library-zmod-v1-2019.1-2/vivado-library-zmod-v1-2019.1-2/ip/PWM_2.0/component.xml. This IP will not be included in the IP Catalog.
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: : Unexpected end of message
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file h:/CE515/vivado-library-zmod-v1-2019.1-2/vivado-library-zmod-v1-2019.1-2/ip/PWM_Analyzer_1.0/component.xml. This IP will not be included in the IP Catalog.
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: : Unexpected end of message
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file h:/CE515/vivado-library-zmod-v1-2019.1-2/vivado-library-zmod-v1-2019.1-2/ip/rgb2dvi/component.xml. This IP will not be included in the IP Catalog.
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: : Unexpected end of message
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file h:/CE515/vivado-library-zmod-v1-2019.1-2/vivado-library-zmod-v1-2019.1-2/ip/usb2device_v1_0/component.xml. This IP will not be included in the IP Catalog.
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: : Unexpected end of message
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file h:/CE515/vivado-library-zmod-v1-2019.1-2/vivado-library-zmod-v1-2019.1-2/ip/video_scaler/component.xml. This IP will not be included in the IP Catalog.
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: : Unexpected end of message
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file h:/CE515/vivado-library-zmod-v1-2019.1-2/vivado-library-zmod-v1-2019.1-2/ip/Zmods/AXI_Zmod_ADC1410/component.xml. This IP will not be included in the IP Catalog.
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: : Unexpected end of message
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file h:/CE515/vivado-library-zmod-v1-2019.1-2/vivado-library-zmod-v1-2019.1-2/ip/Zmods/AXI_Zmod_DAC1411/component.xml. This IP will not be included in the IP Catalog.
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: : Unexpected end of message
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file h:/CE515/vivado-library-zmod-v1-2019.1-2/vivado-library-zmod-v1-2019.1-2/ip/Zmods/ZmodADC1410Controller/component.xml. This IP will not be included in the IP Catalog.
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: : Unexpected end of message
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file h:/CE515/vivado-library-zmod-v1-2019.1-2/vivado-library-zmod-v1-2019.1-2/ip/Zmods/ZmodDAC1411_Controller/component.xml. This IP will not be included in the IP Catalog.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'h:/CE515/vivado-library-zmod-v1-2019.1-2'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:28 . Memory (MB): peak = 803.027 ; gain = 116.789
+update_compile_order -fileset sources_1
+open_bd_design {H:/5A/CE514/ZyboZ7/MatriceZyboZ7Topr/MatriceZyboZ7.srcs/sources_1/bd/design_1/design_1.bd}
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+WARNING: [BD 41-176] The physical port 'S_AXI_GP2_rd_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_GP2_wr_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_GP3_rd_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_GP3_wr_socket' specified in the portmap, is not found on the block! 
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - ps7_0_axi_periph
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_50M
+Adding component instance block -- inpg.fr:user:my_matrice_LED:1.0 - my_matrice_LED_0
+Successfully read diagram <design_1> from BD file <H:/5A/CE514/ZyboZ7/MatriceZyboZ7Topr/MatriceZyboZ7.srcs/sources_1/bd/design_1/design_1.bd>
+open_bd_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 942.969 ; gain = 83.715
+set_property  ip_repo_paths  h:/5A/CE514/ip_repo/my_matrice_LED_1.0 [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'h:/5A/CE514/ip_repo/my_matrice_LED_1.0'.
+set_property  ip_repo_paths  {h:/5A/CE514/ip_repo/my_matrice_LED_1.0 H:/CE515/vivado-library-zmod-v1-2019.1-2} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'h:/5A/CE514/ip_repo/my_matrice_LED_1.0'.
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: : Unexpected end of message
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file h:/CE515/vivado-library-zmod-v1-2019.1-2/vivado-library-zmod-v1-2019.1-2/ip/AXI_DPTI_1.0/component.xml. This IP will not be included in the IP Catalog.
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: : Unexpected end of message
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file h:/CE515/vivado-library-zmod-v1-2019.1-2/vivado-library-zmod-v1-2019.1-2/ip/axi_dynclk_v1_0/component.xml. This IP will not be included in the IP Catalog.
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: : Unexpected end of message
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file h:/CE515/vivado-library-zmod-v1-2019.1-2/vivado-library-zmod-v1-2019.1-2/ip/axi_i2s_adi_1.2/component.xml. This IP will not be included in the IP Catalog.
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: : Unexpected end of message
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file h:/CE515/vivado-library-zmod-v1-2019.1-2/vivado-library-zmod-v1-2019.1-2/ip/axi_ps2_1.0/component.xml. This IP will not be included in the IP Catalog.
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: : Unexpected end of message
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file h:/CE515/vivado-library-zmod-v1-2019.1-2/vivado-library-zmod-v1-2019.1-2/ip/dvi2rgb/component.xml. This IP will not be included in the IP Catalog.
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: : Unexpected end of message
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file h:/CE515/vivado-library-zmod-v1-2019.1-2/vivado-library-zmod-v1-2019.1-2/ip/hls_contrast_stretch_1_0/component.xml. This IP will not be included in the IP Catalog.
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: : Unexpected end of message
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file h:/CE515/vivado-library-zmod-v1-2019.1-2/vivado-library-zmod-v1-2019.1-2/ip/hls_gamma_correction_1_0/component.xml. This IP will not be included in the IP Catalog.
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: : Unexpected end of message
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file h:/CE515/vivado-library-zmod-v1-2019.1-2/vivado-library-zmod-v1-2019.1-2/ip/hls_saturation_enhance_1_0/component.xml. This IP will not be included in the IP Catalog.
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: : Unexpected end of message
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file h:/CE515/vivado-library-zmod-v1-2019.1-2/vivado-library-zmod-v1-2019.1-2/ip/MotorFeedback_1.0/component.xml. This IP will not be included in the IP Catalog.
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: : Unexpected end of message
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file h:/CE515/vivado-library-zmod-v1-2019.1-2/vivado-library-zmod-v1-2019.1-2/ip/Pmods/PmodACL2_v1_0/component.xml. This IP will not be included in the IP Catalog.
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: : Unexpected end of message
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file h:/CE515/vivado-library-zmod-v1-2019.1-2/vivado-library-zmod-v1-2019.1-2/ip/Pmods/PmodACL_v1_0/component.xml. This IP will not be included in the IP Catalog.
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: : Unexpected end of message
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file h:/CE515/vivado-library-zmod-v1-2019.1-2/vivado-library-zmod-v1-2019.1-2/ip/Pmods/PmodAD1_v1_0/component.xml. This IP will not be included in the IP Catalog.
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: : Unexpected end of message
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file h:/CE515/vivado-library-zmod-v1-2019.1-2/vivado-library-zmod-v1-2019.1-2/ip/Pmods/PmodAD2_v1_0/component.xml. This IP will not be included in the IP Catalog.
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: : Unexpected end of message
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file h:/CE515/vivado-library-zmod-v1-2019.1-2/vivado-library-zmod-v1-2019.1-2/ip/Pmods/PmodAD5_v1_0/component.xml. This IP will not be included in the IP Catalog.
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: : Unexpected end of message
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file h:/CE515/vivado-library-zmod-v1-2019.1-2/vivado-library-zmod-v1-2019.1-2/ip/Pmods/PmodALS_v1_0/component.xml. This IP will not be included in the IP Catalog.
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: : Unexpected end of message
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file h:/CE515/vivado-library-zmod-v1-2019.1-2/vivado-library-zmod-v1-2019.1-2/ip/Pmods/PmodAQS_v1_0/component.xml. This IP will not be included in the IP Catalog.
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: : Unexpected end of message
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file h:/CE515/vivado-library-zmod-v1-2019.1-2/vivado-library-zmod-v1-2019.1-2/ip/Pmods/PmodBT2_v1_0/component.xml. This IP will not be included in the IP Catalog.
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: : Unexpected end of message
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file h:/CE515/vivado-library-zmod-v1-2019.1-2/vivado-library-zmod-v1-2019.1-2/ip/Pmods/PmodCAN_v1_0/component.xml. This IP will not be included in the IP Catalog.
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: : Unexpected end of message
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file h:/CE515/vivado-library-zmod-v1-2019.1-2/vivado-library-zmod-v1-2019.1-2/ip/Pmods/PmodCLS_v1_0/component.xml. This IP will not be included in the IP Catalog.
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: : Unexpected end of message
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file h:/CE515/vivado-library-zmod-v1-2019.1-2/vivado-library-zmod-v1-2019.1-2/ip/Pmods/PmodCMPS2_v1_0/component.xml. This IP will not be included in the IP Catalog.
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: : Unexpected end of message
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file h:/CE515/vivado-library-zmod-v1-2019.1-2/vivado-library-zmod-v1-2019.1-2/ip/Pmods/PmodCOLOR_v1_0/component.xml. This IP will not be included in the IP Catalog.
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: : Unexpected end of message
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file h:/CE515/vivado-library-zmod-v1-2019.1-2/vivado-library-zmod-v1-2019.1-2/ip/Pmods/PmodDA1_v1_0/component.xml. This IP will not be included in the IP Catalog.
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: : Unexpected end of message
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file h:/CE515/vivado-library-zmod-v1-2019.1-2/vivado-library-zmod-v1-2019.1-2/ip/Pmods/PmodDHB1_v1_0/component.xml. This IP will not be included in the IP Catalog.
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: : Unexpected end of message
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file h:/CE515/vivado-library-zmod-v1-2019.1-2/vivado-library-zmod-v1-2019.1-2/ip/Pmods/PmodDPG1_v1_0/component.xml. This IP will not be included in the IP Catalog.
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: : Unexpected end of message
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file h:/CE515/vivado-library-zmod-v1-2019.1-2/vivado-library-zmod-v1-2019.1-2/ip/Pmods/PmodENC_v1_0/component.xml. This IP will not be included in the IP Catalog.
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: : Unexpected end of message
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file h:/CE515/vivado-library-zmod-v1-2019.1-2/vivado-library-zmod-v1-2019.1-2/ip/Pmods/PmodGPIO_v1_0/component.xml. This IP will not be included in the IP Catalog.
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: : Unexpected end of message
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file h:/CE515/vivado-library-zmod-v1-2019.1-2/vivado-library-zmod-v1-2019.1-2/ip/Pmods/PmodGPS_v1_1/component.xml. This IP will not be included in the IP Catalog.
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: : Unexpected end of message
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file h:/CE515/vivado-library-zmod-v1-2019.1-2/vivado-library-zmod-v1-2019.1-2/ip/Pmods/PmodGYRO_v1_0/component.xml. This IP will not be included in the IP Catalog.
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: : Unexpected end of message
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file h:/CE515/vivado-library-zmod-v1-2019.1-2/vivado-library-zmod-v1-2019.1-2/ip/Pmods/PmodHYGRO_v1_0/component.xml. This IP will not be included in the IP Catalog.
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: : Unexpected end of message
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file h:/CE515/vivado-library-zmod-v1-2019.1-2/vivado-library-zmod-v1-2019.1-2/ip/Pmods/PmodJSTK_v1_0/component.xml. This IP will not be included in the IP Catalog.
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: : Unexpected end of message
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file h:/CE515/vivado-library-zmod-v1-2019.1-2/vivado-library-zmod-v1-2019.1-2/ip/Pmods/PmodKYPD_v1_0/component.xml. This IP will not be included in the IP Catalog.
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: : Unexpected end of message
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file h:/CE515/vivado-library-zmod-v1-2019.1-2/vivado-library-zmod-v1-2019.1-2/ip/Pmods/PmodMAXSONAR_v1_0/component.xml. This IP will not be included in the IP Catalog.
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: : Unexpected end of message
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file h:/CE515/vivado-library-zmod-v1-2019.1-2/vivado-library-zmod-v1-2019.1-2/ip/Pmods/PmodNAV_v1_0/component.xml. This IP will not be included in the IP Catalog.
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: : Unexpected end of message
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file h:/CE515/vivado-library-zmod-v1-2019.1-2/vivado-library-zmod-v1-2019.1-2/ip/Pmods/pmodOLEDrgb_v1_0/component.xml. This IP will not be included in the IP Catalog.
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: : Unexpected end of message
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file h:/CE515/vivado-library-zmod-v1-2019.1-2/vivado-library-zmod-v1-2019.1-2/ip/Pmods/PmodOLED_v1_0/component.xml. This IP will not be included in the IP Catalog.
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: : Unexpected end of message
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file h:/CE515/vivado-library-zmod-v1-2019.1-2/vivado-library-zmod-v1-2019.1-2/ip/Pmods/PmodPIR_v1_0/component.xml. This IP will not be included in the IP Catalog.
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: : Unexpected end of message
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file h:/CE515/vivado-library-zmod-v1-2019.1-2/vivado-library-zmod-v1-2019.1-2/ip/Pmods/PmodR2R_v1_0/component.xml. This IP will not be included in the IP Catalog.
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: : Unexpected end of message
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file h:/CE515/vivado-library-zmod-v1-2019.1-2/vivado-library-zmod-v1-2019.1-2/ip/Pmods/PmodRTCC_v1_0/component.xml. This IP will not be included in the IP Catalog.
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: : Unexpected end of message
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file h:/CE515/vivado-library-zmod-v1-2019.1-2/vivado-library-zmod-v1-2019.1-2/ip/Pmods/PmodSD_v1_0/component.xml. This IP will not be included in the IP Catalog.
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: : Unexpected end of message
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file h:/CE515/vivado-library-zmod-v1-2019.1-2/vivado-library-zmod-v1-2019.1-2/ip/Pmods/PmodSF3_v1_0/component.xml. This IP will not be included in the IP Catalog.
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: : Unexpected end of message
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file h:/CE515/vivado-library-zmod-v1-2019.1-2/vivado-library-zmod-v1-2019.1-2/ip/Pmods/PmodTC1_v1_0/component.xml. This IP will not be included in the IP Catalog.
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: : Unexpected end of message
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file h:/CE515/vivado-library-zmod-v1-2019.1-2/vivado-library-zmod-v1-2019.1-2/ip/Pmods/PmodTMP3_v1_0/component.xml. This IP will not be included in the IP Catalog.
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: : Unexpected end of message
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file h:/CE515/vivado-library-zmod-v1-2019.1-2/vivado-library-zmod-v1-2019.1-2/ip/Pmods/PmodWIFI_v1_0/component.xml. This IP will not be included in the IP Catalog.
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: : Unexpected end of message
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file h:/CE515/vivado-library-zmod-v1-2019.1-2/vivado-library-zmod-v1-2019.1-2/ip/Pmods/Pmod_Bridge_v1_0/component.xml. This IP will not be included in the IP Catalog.
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: : Unexpected end of message
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file h:/CE515/vivado-library-zmod-v1-2019.1-2/vivado-library-zmod-v1-2019.1-2/ip/Pmods/Pmod_Bridge_v1_1/component.xml. This IP will not be included in the IP Catalog.
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: : Unexpected end of message
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file h:/CE515/vivado-library-zmod-v1-2019.1-2/vivado-library-zmod-v1-2019.1-2/ip/PWM_1.0/component.xml. This IP will not be included in the IP Catalog.
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: : Unexpected end of message
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file h:/CE515/vivado-library-zmod-v1-2019.1-2/vivado-library-zmod-v1-2019.1-2/ip/PWM_2.0/component.xml. This IP will not be included in the IP Catalog.
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: : Unexpected end of message
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file h:/CE515/vivado-library-zmod-v1-2019.1-2/vivado-library-zmod-v1-2019.1-2/ip/PWM_Analyzer_1.0/component.xml. This IP will not be included in the IP Catalog.
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: : Unexpected end of message
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file h:/CE515/vivado-library-zmod-v1-2019.1-2/vivado-library-zmod-v1-2019.1-2/ip/rgb2dvi/component.xml. This IP will not be included in the IP Catalog.
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: : Unexpected end of message
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file h:/CE515/vivado-library-zmod-v1-2019.1-2/vivado-library-zmod-v1-2019.1-2/ip/usb2device_v1_0/component.xml. This IP will not be included in the IP Catalog.
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: : Unexpected end of message
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file h:/CE515/vivado-library-zmod-v1-2019.1-2/vivado-library-zmod-v1-2019.1-2/ip/video_scaler/component.xml. This IP will not be included in the IP Catalog.
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: : Unexpected end of message
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file h:/CE515/vivado-library-zmod-v1-2019.1-2/vivado-library-zmod-v1-2019.1-2/ip/Zmods/AXI_Zmod_ADC1410/component.xml. This IP will not be included in the IP Catalog.
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: : Unexpected end of message
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file h:/CE515/vivado-library-zmod-v1-2019.1-2/vivado-library-zmod-v1-2019.1-2/ip/Zmods/AXI_Zmod_DAC1411/component.xml. This IP will not be included in the IP Catalog.
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: : Unexpected end of message
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file h:/CE515/vivado-library-zmod-v1-2019.1-2/vivado-library-zmod-v1-2019.1-2/ip/Zmods/ZmodADC1410Controller/component.xml. This IP will not be included in the IP Catalog.
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: : Unexpected end of message
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file h:/CE515/vivado-library-zmod-v1-2019.1-2/vivado-library-zmod-v1-2019.1-2/ip/Zmods/ZmodDAC1411_Controller/component.xml. This IP will not be included in the IP Catalog.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'h:/CE515/vivado-library-zmod-v1-2019.1-2'.
+update_ip_catalog: Time (s): cpu = 00:00:03 ; elapsed = 00:00:19 . Memory (MB): peak = 998.750 ; gain = 0.000
+set_property  ip_repo_paths  h:/5A/CE514/ip_repo/my_matrice_LED_1.0 [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'h:/5A/CE514/ip_repo/my_matrice_LED_1.0'.
+set_property  ip_repo_paths  {h:/5A/CE514/ip_repo/my_matrice_LED_1.0 H:/CE515/vivado-library-zmod-v1-2019.1-2} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'h:/5A/CE514/ip_repo/my_matrice_LED_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'h:/CE515/vivado-library-zmod-v1-2019.1-2'.
+update_ip_catalog: Time (s): cpu = 00:00:02 ; elapsed = 00:00:16 . Memory (MB): peak = 1022.551 ; gain = 1.453
+startgroup
+create_bd_cell -type ip -vlnv digilentinc.com:IP:PmodKYPD:1.0 PmodKYPD_0
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/processing_system7_0/FCLK_CLK0 (125 MHz)} Clk_slave {Auto} Clk_xbar {/processing_system7_0/FCLK_CLK0 (125 MHz)} Master {/processing_system7_0/M_AXI_GP0} Slave {/PmodKYPD_0/AXI_LITE_GPIO} ddr_seg {Auto} intc_ip {/ps7_0_axi_periph} master_apm {0}}  [get_bd_intf_pins PmodKYPD_0/AXI_LITE_GPIO]
+Slave segment </PmodKYPD_0/AXI_LITE_GPIO/Reg0> is being mapped into address space </processing_system7_0/Data> at <0x4000_0000 [ 4K ]>
+startgroup
+make_bd_intf_pins_external  [get_bd_intf_pins PmodKYPD_0/Pmod_out]
+endgroup
+save_bd_design
+Wrote  : <H:\5A\CE514\ZyboZ7\MatriceZyboZ7Topr\MatriceZyboZ7.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <H:/5A/CE514/ZyboZ7/MatriceZyboZ7Topr/MatriceZyboZ7.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+validate_bd_design
+WARNING: [BD 41-927] Following properties on pin /PmodKYPD_0/s_axi_aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	FREQ_HZ=125000000 
+save_bd_design
+Wrote  : <H:\5A\CE514\ZyboZ7\MatriceZyboZ7Topr\MatriceZyboZ7.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <H:/5A/CE514/ZyboZ7/MatriceZyboZ7Topr/MatriceZyboZ7.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : H:/5A/CE514/ZyboZ7/MatriceZyboZ7Topr/MatriceZyboZ7.srcs/sources_1/bd/design_1/synth/design_1.vhd
+VHDL Output written to : H:/5A/CE514/ZyboZ7/MatriceZyboZ7Topr/MatriceZyboZ7.srcs/sources_1/bd/design_1/sim/design_1.vhd
+VHDL Output written to : H:/5A/CE514/ZyboZ7/MatriceZyboZ7Topr/MatriceZyboZ7.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block my_matrice_LED_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_50M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/xbar .
+CRITICAL WARNING: [IP_Flow 19-4965] IP PmodKYPD_pmod_bridge_0_0 was packaged with board value 'digilentinc.com:arty:part0:1.1'. Current project's board value is 'digilentinc.com:zybo-z7-10:part0:1.2'. Please update the project settings to match the packaged IP.
+INFO: [IP_Flow 19-1972] Upgraded PmodKYPD_pmod_bridge_0_0 from Pmod Bridge 1.0 to Pmod Bridge 1.1
+CRITICAL WARNING: [IP_Flow 19-4965] IP PmodKYPD_axi_gpio_0_0 was packaged with board value 'digilentinc.com:arty:part0:1.1'. Current project's board value is 'digilentinc.com:zybo-z7-10:part0:1.2'. Please update the project settings to match the packaged IP.
+INFO: [IP_Flow 19-3422] Upgraded PmodKYPD_axi_gpio_0_0 (AXI GPIO 2.0) from revision 17 to revision 22
+CRITICAL WARNING: [IP_Flow 19-4965] IP PmodKYPD_xlslice_0_0 was packaged with board value 'digilentinc.com:arty:part0:1.1'. Current project's board value is 'digilentinc.com:zybo-z7-10:part0:1.2'. Please update the project settings to match the packaged IP.
+INFO: [IP_Flow 19-3422] Upgraded PmodKYPD_xlslice_0_0 (Slice 1.0) from revision 1 to revision 2
+CRITICAL WARNING: [IP_Flow 19-4965] IP PmodKYPD_xlslice_0_1 was packaged with board value 'digilentinc.com:arty:part0:1.1'. Current project's board value is 'digilentinc.com:zybo-z7-10:part0:1.2'. Please update the project settings to match the packaged IP.
+INFO: [IP_Flow 19-3422] Upgraded PmodKYPD_xlslice_0_1 (Slice 1.0) from revision 1 to revision 2
+CRITICAL WARNING: [IP_Flow 19-4965] IP PmodKYPD_xlslice_0_2 was packaged with board value 'digilentinc.com:arty:part0:1.1'. Current project's board value is 'digilentinc.com:zybo-z7-10:part0:1.2'. Please update the project settings to match the packaged IP.
+INFO: [IP_Flow 19-3422] Upgraded PmodKYPD_xlslice_0_2 (Slice 1.0) from revision 1 to revision 2
+CRITICAL WARNING: [IP_Flow 19-4965] IP PmodKYPD_xlslice_t_0_0 was packaged with board value 'digilentinc.com:arty:part0:1.1'. Current project's board value is 'digilentinc.com:zybo-z7-10:part0:1.2'. Please update the project settings to match the packaged IP.
+INFO: [IP_Flow 19-3422] Upgraded PmodKYPD_xlslice_t_0_0 (Slice 1.0) from revision 1 to revision 2
+CRITICAL WARNING: [IP_Flow 19-4965] IP PmodKYPD_xlconcat_0_0 was packaged with board value 'digilentinc.com:arty:part0:1.1'. Current project's board value is 'digilentinc.com:zybo-z7-10:part0:1.2'. Please update the project settings to match the packaged IP.
+INFO: [IP_Flow 19-3422] Upgraded PmodKYPD_xlconcat_0_0 (Concat 2.1) from revision 1 to revision 3
+RUNNING BOARD.XIT
+    h:/5A/CE514/ZyboZ7/MatriceZyboZ7Topr/MatriceZyboZ7.srcs/sources_1/bd/design_1/ip/design_1_PmodKYPD_0_0/src/PmodKYPD_pmod_bridge_0_0/PmodKYPD_pmod_bridge_0_0_board.xdc
+INFO: [BD 41-1029] Generation completed for the IP Integrator block PmodKYPD_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'h:/5A/CE514/ZyboZ7/MatriceZyboZ7Topr/MatriceZyboZ7.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file H:/5A/CE514/ZyboZ7/MatriceZyboZ7Topr/MatriceZyboZ7.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file H:/5A/CE514/ZyboZ7/MatriceZyboZ7Topr/MatriceZyboZ7.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File H:/5A/CE514/ZyboZ7/MatriceZyboZ7Topr/MatriceZyboZ7.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_0, cache-ID = e3a5cdc0637d4a45; cache size = 15.701 MB.
+INFO: [IP_Flow 19-5642] Done with IP cache export for multiple IPs
+[Thu Nov 23 13:02:58 2023] Launched design_1_PmodKYPD_0_0_synth_1, design_1_xbar_0_synth_1, synth_1...
+Run output will be captured here:
+design_1_PmodKYPD_0_0_synth_1: H:/5A/CE514/ZyboZ7/MatriceZyboZ7Topr/MatriceZyboZ7.runs/design_1_PmodKYPD_0_0_synth_1/runme.log
+design_1_xbar_0_synth_1: H:/5A/CE514/ZyboZ7/MatriceZyboZ7Topr/MatriceZyboZ7.runs/design_1_xbar_0_synth_1/runme.log
+synth_1: H:/5A/CE514/ZyboZ7/MatriceZyboZ7Topr/MatriceZyboZ7.runs/synth_1/runme.log
+[Thu Nov 23 13:02:58 2023] Launched impl_1...
+Run output will be captured here: H:/5A/CE514/ZyboZ7/MatriceZyboZ7Topr/MatriceZyboZ7.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:05 ; elapsed = 00:00:21 . Memory (MB): peak = 1220.102 ; gain = 135.539
+reset_run synth_1
+reset_run design_1_PmodKYPD_0_0_synth_1
+reset_run design_1_xbar_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+INFO: [IP_Flow 19-5642] Done with IP cache export for multiple IPs
+[Thu Nov 23 13:07:33 2023] Launched design_1_PmodKYPD_0_0_synth_1, design_1_xbar_0_synth_1, synth_1...
+Run output will be captured here:
+design_1_PmodKYPD_0_0_synth_1: H:/5A/CE514/ZyboZ7/MatriceZyboZ7Topr/MatriceZyboZ7.runs/design_1_PmodKYPD_0_0_synth_1/runme.log
+design_1_xbar_0_synth_1: H:/5A/CE514/ZyboZ7/MatriceZyboZ7Topr/MatriceZyboZ7.runs/design_1_xbar_0_synth_1/runme.log
+synth_1: H:/5A/CE514/ZyboZ7/MatriceZyboZ7Topr/MatriceZyboZ7.runs/synth_1/runme.log
+[Thu Nov 23 13:07:33 2023] Launched impl_1...
+Run output will be captured here: H:/5A/CE514/ZyboZ7/MatriceZyboZ7Topr/MatriceZyboZ7.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 1442.910 ; gain = 0.000
+delete_bd_objs [get_bd_intf_nets PmodKYPD_0_Pmod_out] [get_bd_intf_ports Pmod_out_0]
+startgroup
+make_bd_intf_pins_external  [get_bd_intf_pins PmodKYPD_0/Pmod_out]
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv digilentinc.com:ip:pmod_bridge:1.1 pmod_bridge_0
+endgroup
+delete_bd_objs [get_bd_intf_nets PmodKYPD_0_Pmod_out]
+delete_bd_objs [get_bd_intf_ports Pmod_out_0]
+regenerate_bd_layout
+undo
+INFO: [Common 17-17] undo 'regenerate_bd_layout'
+undo
+INFO: [Common 17-17] undo 'delete_bd_objs [get_bd_intf_ports Pmod_out_0]'
+undo
+INFO: [Common 17-17] undo 'delete_bd_objs [get_bd_intf_nets PmodKYPD_0_Pmod_out]'
+undo
+INFO: [Common 17-17] undo 'endgroup'
+INFO: [Common 17-17] undo 'create_bd_cell -type ip -vlnv digilentinc.com:ip:pmod_bridge:1.1 pmod_bridge_0'
+INFO: [Common 17-17] undo 'startgroup'
+set_property location {1087 -26} [get_bd_intf_ports Pmod_out_0]
+set_property location {1127 15} [get_bd_intf_ports Pmod_out_0]
+set_property location {1116 -8} [get_bd_intf_ports Pmod_out_0]
+save_bd_design
+Wrote  : <H:\5A\CE514\ZyboZ7\MatriceZyboZ7Topr\MatriceZyboZ7.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <H:/5A/CE514/ZyboZ7/MatriceZyboZ7Topr/MatriceZyboZ7.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.110 . Memory (MB): peak = 2410.441 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 785 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.597 . Memory (MB): peak = 2410.441 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.599 . Memory (MB): peak = 2410.441 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2410.441 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 8 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 8 instances
+
+open_run: Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 2410.441 ; gain = 0.000
+open_bd_design {H:/5A/CE514/ZyboZ7/MatriceZyboZ7Topr/MatriceZyboZ7.srcs/sources_1/bd/design_1/design_1.bd}
+delete_bd_objs [get_bd_intf_nets PmodKYPD_0_Pmod_out] [get_bd_intf_ports Pmod_out_0]
+save_bd_design
+Wrote  : <H:\5A\CE514\ZyboZ7\MatriceZyboZ7Topr\MatriceZyboZ7.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <H:/5A/CE514/ZyboZ7/MatriceZyboZ7Topr/MatriceZyboZ7.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+set_property IOSTANDARD LVCMOS33 [get_ports [list Pmod_out_0_pin1_io]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list Pmod_out_0_pin2_io]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list Pmod_out_0_pin3_io]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list Pmod_out_0_pin4_io]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list Pmod_out_0_pin7_io]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list Pmod_out_0_pin8_io]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list Pmod_out_0_pin9_io]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list Pmod_out_0_pin10_io]]
+set_property target_constrs_file H:/5A/CE514/ZyboZ7/MatriceZyboZ7Topr/MatriceZyboZ7.srcs/constrs_1/imports/ZyboZ7/Zybo-Z7-Master.xdc [current_fileset -constrset]
+save_constraints -force
+open_bd_design {H:/5A/CE514/ZyboZ7/MatriceZyboZ7Topr/MatriceZyboZ7.srcs/sources_1/bd/design_1/design_1.bd}
+startgroup
+make_bd_intf_pins_external  [get_bd_intf_pins PmodKYPD_0/Pmod_out]
+endgroup
+open_bd_design {H:/5A/CE514/ZyboZ7/MatriceZyboZ7Topr/MatriceZyboZ7.srcs/sources_1/bd/design_1/design_1.bd}
+open_bd_design {H:/5A/CE514/ZyboZ7/MatriceZyboZ7Topr/MatriceZyboZ7.srcs/sources_1/bd/design_1/design_1.bd}
+open_bd_design {H:/5A/CE514/ZyboZ7/MatriceZyboZ7Topr/MatriceZyboZ7.srcs/sources_1/bd/design_1/design_1.bd}
+startgroup
+set_property -dict [list CONFIG.PMOD {jc}] [get_bd_cells PmodKYPD_0]
+endgroup
+save_bd_design
+Wrote  : <H:\5A\CE514\ZyboZ7\MatriceZyboZ7Topr\MatriceZyboZ7.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <H:/5A/CE514/ZyboZ7/MatriceZyboZ7Topr/MatriceZyboZ7.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+reset_run design_1_PmodKYPD_0_0_synth_1
+reset_run synth_1
+launch_runs impl_1 -jobs 6
+WARNING: [BD 41-927] Following properties on pin /PmodKYPD_0/s_axi_aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	FREQ_HZ=125000000 
+Wrote  : <H:\5A\CE514\ZyboZ7\MatriceZyboZ7Topr\MatriceZyboZ7.srcs\sources_1\bd\design_1\design_1.bd> 
+VHDL Output written to : H:/5A/CE514/ZyboZ7/MatriceZyboZ7Topr/MatriceZyboZ7.srcs/sources_1/bd/design_1/synth/design_1.vhd
+VHDL Output written to : H:/5A/CE514/ZyboZ7/MatriceZyboZ7Topr/MatriceZyboZ7.srcs/sources_1/bd/design_1/sim/design_1.vhd
+VHDL Output written to : H:/5A/CE514/ZyboZ7/MatriceZyboZ7Topr/MatriceZyboZ7.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block my_matrice_LED_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_50M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block PmodKYPD_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'h:/5A/CE514/ZyboZ7/MatriceZyboZ7Topr/MatriceZyboZ7.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file H:/5A/CE514/ZyboZ7/MatriceZyboZ7Topr/MatriceZyboZ7.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file H:/5A/CE514/ZyboZ7/MatriceZyboZ7Topr/MatriceZyboZ7.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File H:/5A/CE514/ZyboZ7/MatriceZyboZ7Topr/MatriceZyboZ7.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_0, cache-ID = e3a5cdc0637d4a45; cache size = 16.540 MB.
+INFO: [IP_Flow 19-5642] Done with IP cache export for multiple IPs
+[Thu Nov 23 13:31:13 2023] Launched design_1_PmodKYPD_0_0_synth_1, synth_1...
+Run output will be captured here:
+design_1_PmodKYPD_0_0_synth_1: H:/5A/CE514/ZyboZ7/MatriceZyboZ7Topr/MatriceZyboZ7.runs/design_1_PmodKYPD_0_0_synth_1/runme.log
+synth_1: H:/5A/CE514/ZyboZ7/MatriceZyboZ7Topr/MatriceZyboZ7.runs/synth_1/runme.log
+[Thu Nov 23 13:31:13 2023] Launched impl_1...
+Run output will be captured here: H:/5A/CE514/ZyboZ7/MatriceZyboZ7Topr/MatriceZyboZ7.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:03 ; elapsed = 00:00:14 . Memory (MB): peak = 3636.961 ; gain = 14.711
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Thu Nov 23 13:37:07 2023] Launched impl_1...
+Run output will be captured here: H:/5A/CE514/ZyboZ7/MatriceZyboZ7Topr/MatriceZyboZ7.runs/impl_1/runme.log
+write_hw_platform -fixed -force  -include_bit -file H:/5A/CE514/ZyboZ7/MatriceZyboZ7Topr/design_1_wrapper.xsa
+INFO: [Vivado 12-4895] Creating Hardware Platform: H:/5A/CE514/ZyboZ7/MatriceZyboZ7Topr/design_1_wrapper.xsa ...
+INFO: [Hsi 55-2053] elapsed time for repository (C:/Xilinx/Vivado/2019.2/data\embeddedsw) loading 0 seconds
+WARNING: [Project 1-645] Board images not set in Hardware Platform.
+INFO: [Vivado 12-4896] Successfully created Hardware Platform: H:/5A/CE514/ZyboZ7/MatriceZyboZ7Topr/design_1_wrapper.xsa
+write_hw_platform: Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 3665.316 ; gain = 28.355

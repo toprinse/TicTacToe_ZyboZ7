@@ -1,0 +1,480 @@
+#include "PmodKYPD.h"
+#include "xil_cache.h"
+#include "xparameters.h"
+#include "platform.h"
+#include "xil_printf.h"
+#include "platform.h"
+#include "xbasic_types.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <xil_io.h>
+#include <unistd.h>
+#include <xil_types.h>
+#include <stdbool.h>
+
+// Functions prototypes
+void DemoInitialize();
+void DemoCleanup();
+void EnableCaches();
+void DisableCaches();
+void ActualizeMatrix();
+u8 ReadKeypad();
+
+// FSM functions
+void startGame();
+void playGame();
+void ChangePlayer(char* player, int state);
+
+// Status functions
+bool isBoardFull();
+bool isKeyAuthorized(u8 testedValue);
+bool isMoveValid(u8 value);
+bool AsWin();
+u8 CalculateKeyPressed(u8 testedValue);
+void makeMove(u8 value, char player);
+
+PmodKYPD myDevice;
+
+// Definition for player symbols
+#define PLAYER_X 'X'
+#define PLAYER_O 'O'
+
+// Define keytable
+#define DEFAULT_KEYTABLE "0FED789C456B123A"
+
+// enum FSM State
+typedef enum {
+    STATE_START,
+    STATE_PLAY,
+    STATE_DRAW,
+    STATE_END
+} GameState;
+
+// Global variables
+GameState currentState = STATE_START;
+int board[9] = {0,0,0,0,0,0,0,0,0};
+uint32_t *baseaddr_p = (uint32_t *) XPAR_MY_MATRICE_LED_0_MY_MATRICE_LED_BASEADDR;
+
+int main()
+{
+	DemoInitialize();
+	init_platform();
+	for( uint8_t loop = 0; loop <= 64; loop++)
+	{
+	   *(baseaddr_p+loop) = 0x00000000;
+	}
+	for( uint8_t j = 0; j < 9; j++)
+	{
+		board[j] = 0;
+	}
+
+	while(1){
+		while (currentState != STATE_END) {
+			switch (currentState) {
+				case STATE_START:
+					startGame();
+				break;
+
+				case STATE_PLAY:
+					playGame();
+				break;
+
+				case STATE_DRAW:
+					printf("It's a draw!\n");
+					currentState = STATE_END;
+				break;
+
+				case STATE_END:
+					//endGame();
+					printf("fin partie \n\n\n\n");
+				break;
+			}
+		}
+		currentState = STATE_START;
+		break;
+	}
+
+	DemoCleanup();
+    return 0;
+}
+
+
+void playGame(){
+	char currentPlayer = PLAYER_X;
+	bool validKey = false;
+	int state = 1;
+	while (1) {
+		ActualizeMatrix(baseaddr_p);
+		validKey = false;
+
+		if (isBoardFull() == 1) {
+			currentState = STATE_DRAW;
+			break;
+		}
+
+		if(AsWin(state))
+		{
+			if(state == 1)
+			{
+				printf("Player 'X' as won !!");
+			}
+			else
+			{
+				printf("Player 'O' as won !!");
+			}
+			currentState = STATE_END;
+			break;
+		}
+
+	    u8 valueOnBoard;
+	    while(validKey == false)
+	    {
+	    	usleep(10000);
+	    	printf("Player %c's turn. Enter the value in which you want to put a cross \r\n ", currentPlayer);
+	    	u8 key_pressed = ReadKeypad();
+
+	    	if(isKeyAuthorized(key_pressed))
+	    	{
+	    		valueOnBoard = CalculateKeyPressed(key_pressed);
+	    		if(isMoveValid(valueOnBoard))
+	    		{
+	    			makeMove(valueOnBoard, currentPlayer);
+	    			if(currentPlayer == 'X')
+	    			{
+	    				board[valueOnBoard-1] = 1;
+	    			}
+	    			else
+	    			{
+	    				board[valueOnBoard-1] = 2;
+	    			}
+	    			validKey = true;
+	    		}
+	    		else
+	    		{
+	    			xil_printf("There is already a cross at this place \r\n");
+	    		}
+	    	}
+	    	else
+	    	{
+	    		xil_printf("This value is unauthorized ! \r\n");
+	    	}
+	    }
+
+	    /*if (currentPlayer == PLAYER_X) {
+	        currentPlayer = PLAYER_O;
+	    }
+	    else {
+	        currentPlayer = PLAYER_X;
+	    }*/
+	    ChangePlayer(&currentPlayer, state);
+	}
+}
+
+bool AsWin(int state)
+{
+	bool b_ret = false;
+
+	// from point 0
+	if((board[0] == state && board[1] == state && board[2] == state) ||
+	   (board[0] == state && board[3] == state && board[6] == state) ||
+	   (board[2] == state && board[5] == state && board[8] == state) ||
+	   (board[6] == state && board[7] == state && board[8] == state))
+	{
+		b_ret = true;
+	}
+	// diagonales
+	if((board[0] == state && board[4] == state && board[8] == state) ||
+	   (board[2] == state && board[4] == state && board[6] == state))
+	{
+		b_ret = true;
+	}
+	// middle
+	if((board[1] == state && board[4] == state && board[7] == state) ||
+	   (board[3] == state && board[4] == state && board[5] == state))
+	{
+		b_ret = true;
+	}
+
+	return b_ret;
+}
+
+void makeMove(u8 placeChoose, char player)
+{
+	switch(placeChoose)
+	{
+		case 1 :
+			if(player == 'X')
+			{
+				*(baseaddr_p+1) = 0x00000F00;
+				*(baseaddr_p+2) = 0x00000F00;
+				*(baseaddr_p+9) = 0x00000F00;
+				*(baseaddr_p+10) = 0x00000F00;
+			}
+			if(player == 'O')
+			{
+				*(baseaddr_p+1) = 0x0000F000;
+				*(baseaddr_p+2) = 0x0000F000;
+				*(baseaddr_p+9) = 0x0000F000;
+				*(baseaddr_p+10) = 0x0000F000;
+			}
+		break;
+		case 2 :
+			if(player == 'X')
+			{
+				*(baseaddr_p+4) = 0x00000F00;
+				*(baseaddr_p+5) = 0x00000F00;
+				*(baseaddr_p+12) = 0x00000F00;
+				*(baseaddr_p+13) = 0x00000F00;
+			}
+			if(player == 'O')
+			{
+				*(baseaddr_p+4) = 0x0000F000;
+				*(baseaddr_p+5) = 0x0000F000;
+				*(baseaddr_p+12) = 0x0000F000;
+				*(baseaddr_p+13) = 0x0000F000;
+			}
+		break;
+		case 3 :
+			if(player == 'X')
+			{
+				*(baseaddr_p+7) = 0x00000F00;
+				*(baseaddr_p+8) = 0x00000F00;
+				*(baseaddr_p+15) = 0x00000F00;
+				*(baseaddr_p+16) = 0x00000F00;
+			}
+			if(player == 'O')
+			{
+				*(baseaddr_p+7) = 0x0000F000;
+				*(baseaddr_p+8) = 0x0000F000;
+				*(baseaddr_p+15) = 0x0000F000;
+				*(baseaddr_p+16) = 0x0000F000;
+			}
+		break;
+		case 4 :
+			if(player == 'X')
+			{
+				*(baseaddr_p+25) = 0x00000F00;
+				*(baseaddr_p+26) = 0x00000F00;
+				*(baseaddr_p+33) = 0x00000F00;
+				*(baseaddr_p+34) = 0x00000F00;
+			}
+			if(player == 'O')
+			{
+				*(baseaddr_p+25) = 0x0000F000;
+				*(baseaddr_p+26) = 0x0000F000;
+				*(baseaddr_p+33) = 0x0000F000;
+				*(baseaddr_p+34) = 0x0000F000;
+			}
+		break;
+		case 5 :
+			if(player == 'X')
+			{
+				*(baseaddr_p+28) = 0x00000F00;
+				*(baseaddr_p+29) = 0x00000F00;
+				*(baseaddr_p+36) = 0x00000F00;
+				*(baseaddr_p+37) = 0x00000F00;
+			}
+			if(player == 'O')
+			{
+				*(baseaddr_p+28) = 0x0000F000;
+				*(baseaddr_p+29) = 0x0000F000;
+				*(baseaddr_p+36) = 0x0000F000;
+				*(baseaddr_p+37) = 0x0000F000;
+			}
+		break;
+		case 6 :
+			if(player == 'X')
+			{
+				*(baseaddr_p+31) = 0x00000F00;
+				*(baseaddr_p+32) = 0x00000F00;
+				*(baseaddr_p+39) = 0x00000F00;
+				*(baseaddr_p+40) = 0x00000F00;
+			}
+			if(player == 'O')
+			{
+				*(baseaddr_p+31) = 0x0000F000;
+				*(baseaddr_p+32) = 0x0000F000;
+				*(baseaddr_p+39) = 0x0000F000;
+				*(baseaddr_p+40) = 0x0000F000;
+			}
+		break;
+		case 7 :
+			if(player == 'X')
+			{
+				*(baseaddr_p+49) = 0x00000F00;
+				*(baseaddr_p+50) = 0x00000F00;
+				*(baseaddr_p+57) = 0x00000F00;
+				*(baseaddr_p+58) = 0x00000F00;
+			}
+			if(player == 'O')
+			{
+				*(baseaddr_p+49) = 0x0000F000;
+				*(baseaddr_p+50) = 0x0000F000;
+				*(baseaddr_p+57) = 0x0000F000;
+				*(baseaddr_p+58) = 0x0000F000;
+			}
+		break;
+		case 8 :
+			if(player == 'X')
+			{
+				*(baseaddr_p+52) = 0x00000F00;
+				*(baseaddr_p+53) = 0x00000F00;
+				*(baseaddr_p+60) = 0x00000F00;
+				*(baseaddr_p+61) = 0x00000F00;
+			}
+			if(player == 'O')
+			{
+				*(baseaddr_p+52) = 0x0000F000;
+				*(baseaddr_p+53) = 0x0000F000;
+				*(baseaddr_p+60) = 0x0000F000;
+				*(baseaddr_p+61) = 0x0000F000;
+			}
+		break;
+		case 9 :
+			if(player == 'X')
+			{
+				*(baseaddr_p+55) = 0x00000F00;
+				*(baseaddr_p+56) = 0x00000F00;
+				*(baseaddr_p+63) = 0x00000F00;
+				*(baseaddr_p+64) = 0x00000F00;
+			}
+			if(player == 'O')
+			{
+				*(baseaddr_p+55) = 0x0000F000;
+				*(baseaddr_p+56) = 0x0000F000;
+				*(baseaddr_p+63) = 0x0000F000;
+				*(baseaddr_p+64) = 0x0000F000;
+			}
+		break;
+	}
+	xil_printf("Player %c made a move on %d\r\n", player, placeChoose);
+}
+
+void ChangePlayer(char* player, int state){
+	 if (*player == PLAYER_X) {
+		 *player = PLAYER_O;
+		 state = 2;
+		 printf("hellllllllooooon\n\n\n");
+	 }
+	 else {
+		 *player = PLAYER_X;
+		 state = 1;
+	 }
+}
+
+bool isMoveValid(u8 value) {
+    return (board[value-1] == 0
+    		&& value > 0
+			&& value );
+}
+
+bool isBoardFull() {
+    for (int j = 0; j < 9; j++) {
+        if (board[j] == 0) {
+            return false; // a place on the board has been founded
+        }
+    }
+    return true; // Board is full
+}
+
+void startGame(){
+	xil_printf("Tic Tac Toe Game Started!\r\n");
+    for( uint8_t loop = 0; loop <= 64; loop++)
+    {
+    	*(baseaddr_p+loop) = 0xFFFFFFFF;
+    }
+    ActualizeMatrix(baseaddr_p);
+    usleep(1000000);
+    for( uint8_t loop = 0; loop <= 64; loop++)
+    {
+        *(baseaddr_p+loop) = 0x00000000;
+    }
+    ActualizeMatrix(baseaddr_p);
+    usleep(1000000);
+    xil_printf("Do your best !\r\n");
+	currentState = STATE_PLAY;
+}
+
+bool isKeyAuthorized(u8 testedValue){
+	if(testedValue >= 48 && testedValue <= 57)
+	{
+		return true;
+	}
+	else
+	{
+		return false;
+	}
+}
+
+u8 CalculateKeyPressed(u8 testedValue){
+	return testedValue-48;
+}
+
+void ActualizeMatrix(uint32_t *basePtr){
+	*(basePtr) = 0x00000001;
+	*(basePtr) = 0x00000000;
+}
+
+u8 ReadKeypad() {
+   u16 keystate;
+   XStatus status, last_status = KYPD_NO_KEY;
+   u8 key, last_key = 'x';
+   bool receive = false;
+
+   Xil_Out32(myDevice.GPIO_addr, 0xF);
+
+   while (receive == false) {
+      // Capture state of each key
+      keystate = KYPD_getKeyStates(&myDevice);
+      // Determine which single key is pressed, if any
+      status = KYPD_getKeyPressed(&myDevice, keystate, &key);
+      usleep(100000);
+
+      // Print key detect if a new key is pressed or if status has changed
+      if (status == KYPD_SINGLE_KEY && (status != last_status || key != last_key)) {
+         //xil_printf("Key Pressed: %c\r\n", (char) key);
+         last_key = key;
+         receive = true;
+      }
+      else if (status == KYPD_MULTI_KEY && status != last_status)
+      {
+         xil_printf("Error: Multiple keys pressed\r\n");
+      }
+
+      last_status = status;
+
+   }
+   return key;
+}
+
+void DemoInitialize() {
+   EnableCaches();
+   KYPD_begin(&myDevice, XPAR_PMODKYPD_0_AXI_LITE_GPIO_BASEADDR);
+   KYPD_loadKeyTable(&myDevice, (u8*) DEFAULT_KEYTABLE);
+}
+
+void DemoCleanup() {
+   DisableCaches();
+}
+
+void EnableCaches() {
+#ifdef __MICROBLAZE__
+#ifdef XPAR_MICROBLAZE_USE_ICACHE
+   Xil_ICacheEnable();
+#endif
+#ifdef XPAR_MICROBLAZE_USE_DCACHE
+   Xil_DCacheEnable();
+#endif
+#endif
+}
+
+void DisableCaches() {
+#ifdef __MICROBLAZE__
+#ifdef XPAR_MICROBLAZE_USE_DCACHE
+   Xil_DCacheDisable();
+#endif
+#ifdef XPAR_MICROBLAZE_USE_ICACHE
+   Xil_ICacheDisable();
+#endif
+#endif
+}

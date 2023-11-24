@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Wed Nov 22 10:02:15 2023
+# Process ID: 10308
+# Current directory: h:/5A/CE514/ZyboZ7/MatriceZyboZ7
+# Command line: wbtcv.exe -mode batch -source h:/5a/ce514/zyboz7/matricezyboz7/matricezyboz7.tmp/my_matrice_led_v1_0_project/my_matrice_LED_v1_0_project.hw/webtalk/labtool_webtalk.tcl -notrace
+# Log file: h:/5A/CE514/ZyboZ7/MatriceZyboZ7/webtalk.log
+# Journal file: h:/5A/CE514/ZyboZ7/MatriceZyboZ7\webtalk.jou
+#-----------------------------------------------------------
+source h:/5a/ce514/zyboz7/matricezyboz7/matricezyboz7.tmp/my_matrice_led_v1_0_project/my_matrice_LED_v1_0_project.hw/webtalk/labtool_webtalk.tcl -notrace

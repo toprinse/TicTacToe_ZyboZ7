@@ -1,0 +1,9 @@
+vhdl xil_defaultlib  \
+"../../../bd/design_1/ipshared/5a5d/src/MatriceTest.vhd" \
+"../../../bd/design_1/ipshared/5a5d/hdl/my_matrice_LED_v1_0_my_matrice_LED.vhd" \
+"../../../bd/design_1/ipshared/5a5d/hdl/my_matrice_LED_v1_0.vhd" \
+"../../../bd/design_1/ip/design_1_my_matrice_LED_0_0/sim/design_1_my_matrice_LED_0_0.vhd" \
+"../../../bd/design_1/ip/design_1_rst_ps7_0_50M_0/sim/design_1_rst_ps7_0_50M_0.vhd" \
+"../../../bd/design_1/sim/design_1.vhd" \
+
+nosort

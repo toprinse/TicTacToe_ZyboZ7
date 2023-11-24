@@ -1,0 +1,124 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Wed Nov 22 08:27:36 2023
+# Process ID: 9592
+# Current directory: H:/5A/CE514/ZyboZ7/MatriceZyboZ7
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2568 H:\5A\CE514\ZyboZ7\MatriceZyboZ7\MatriceZyboZ7.xpr
+# Log file: H:/5A/CE514/ZyboZ7/MatriceZyboZ7/vivado.log
+# Journal file: H:/5A/CE514/ZyboZ7/MatriceZyboZ7\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project H:/5A/CE514/ZyboZ7/MatriceZyboZ7/MatriceZyboZ7.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'h:/5A/CE514/ip_repo/my_matrice_LED_1.0'.
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: : Unexpected end of message
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file h:/CE515/vivado-library-zmod-v1-2019.1-2/vivado-library-zmod-v1-2019.1-2/ip/video_scaler/component.xml. This IP will not be included in the IP Catalog.
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: : Unexpected end of message
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file h:/CE515/vivado-library-zmod-v1-2019.1-2/vivado-library-zmod-v1-2019.1-2/ip/Zmods/AXI_Zmod_ADC1410/component.xml. This IP will not be included in the IP Catalog.
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: : Unexpected end of message
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file h:/CE515/vivado-library-zmod-v1-2019.1-2/vivado-library-zmod-v1-2019.1-2/ip/Zmods/AXI_Zmod_DAC1411/component.xml. This IP will not be included in the IP Catalog.
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: : Unexpected end of message
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file h:/CE515/vivado-library-zmod-v1-2019.1-2/vivado-library-zmod-v1-2019.1-2/ip/Zmods/ZmodADC1410Controller/component.xml. This IP will not be included in the IP Catalog.
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: : Unexpected end of message
+CRITICAL WARNING: [IP_Flow 19-1977] Unable to read IP file h:/CE515/vivado-library-zmod-v1-2019.1-2/vivado-library-zmod-v1-2019.1-2/ip/Zmods/ZmodDAC1411_Controller/component.xml. This IP will not be included in the IP Catalog.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'h:/CE515/vivado-library-zmod-v1-2019.1-2'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:31 . Memory (MB): peak = 804.828 ; gain = 123.062
+update_compile_order -fileset sources_1
+INFO: [Vivado 12-8231] Launching Vitis
+INFO: [Vivado 12-417] Running vitis
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: : Unexpected end of message
+INFO: [Vivado 12-8232] Vitis launch initiated. Please check console for any further messages.
+WARNING: [IP_Flow 19-395] Problem validating against XML schema: : Unexpected end of message
+open_bd_design {H:/5A/CE514/ZyboZ7/MatriceZyboZ7/MatriceZyboZ7.srcs/sources_1/bd/design_1/design_1.bd}
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+WARNING: [BD 41-176] The physical port 'S_AXI_GP2_rd_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_GP2_wr_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_GP3_rd_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_GP3_wr_socket' specified in the portmap, is not found on the block! 
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - ps7_0_axi_periph
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_50M
+Adding component instance block -- inpg.fr:user:my_matrice_LED:1.0 - my_matrice_LED_0
+Successfully read diagram <design_1> from BD file <H:/5A/CE514/ZyboZ7/MatriceZyboZ7/MatriceZyboZ7.srcs/sources_1/bd/design_1/design_1.bd>
+open_bd_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1042.543 ; gain = 110.941
+ipx::edit_ip_in_project -upgrade true -name my_matrice_LED_v1_0_project -directory H:/5A/CE514/ZyboZ7/MatriceZyboZ7/MatriceZyboZ7.tmp/my_matrice_LED_v1_0_project h:/5A/CE514/ip_repo/my_matrice_LED_1.0/component.xml
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1042.543 ; gain = 0.000
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'h:/5A/CE514/ip_repo/my_matrice_LED_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'h:/CE515/vivado-library-zmod-v1-2019.1-2'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:26 . Memory (MB): peak = 1042.543 ; gain = 0.000
+update_compile_order -fileset sources_1
+ipx::merge_project_changes files [ipx::current_core]
+WARNING: [IP_Flow 19-5226] Project source file 'h:/5A/CE514/ip_repo/my_matrice_LED_1.0/component.xml' ignored by IP packager.
+set_property core_revision 6 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path h:/5A/CE514/ip_repo/my_matrice_LED_1.0
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'h:/5A/CE514/ip_repo/my_matrice_LED_1.0'
+report_ip_status -name ip_status 
+upgrade_ip -vlnv inpg.fr:user:my_matrice_LED:1.0 [get_ips  design_1_my_matrice_LED_0_0] -log ip_upgrade.log
+Upgrading 'H:/5A/CE514/ZyboZ7/MatriceZyboZ7/MatriceZyboZ7.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [IP_Flow 19-3422] Upgraded design_1_my_matrice_LED_0_0 (my_matrice_LED_v1.0 1.0) from revision 5 to revision 6
+Wrote  : <H:\5A\CE514\ZyboZ7\MatriceZyboZ7\MatriceZyboZ7.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <H:/5A/CE514/ZyboZ7/MatriceZyboZ7/MatriceZyboZ7.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'H:/5A/CE514/ZyboZ7/MatriceZyboZ7/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips design_1_my_matrice_LED_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  H:/5A/CE514/ZyboZ7/MatriceZyboZ7/MatriceZyboZ7.srcs/sources_1/bd/design_1/design_1.bd]
+Wrote  : <H:\5A\CE514\ZyboZ7\MatriceZyboZ7\MatriceZyboZ7.srcs\sources_1\bd\design_1\design_1.bd> 
+VHDL Output written to : H:/5A/CE514/ZyboZ7/MatriceZyboZ7/MatriceZyboZ7.srcs/sources_1/bd/design_1/synth/design_1.vhd
+VHDL Output written to : H:/5A/CE514/ZyboZ7/MatriceZyboZ7/MatriceZyboZ7.srcs/sources_1/bd/design_1/sim/design_1.vhd
+VHDL Output written to : H:/5A/CE514/ZyboZ7/MatriceZyboZ7/MatriceZyboZ7.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block my_matrice_LED_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_50M .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'h:/5A/CE514/ZyboZ7/MatriceZyboZ7/MatriceZyboZ7.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file H:/5A/CE514/ZyboZ7/MatriceZyboZ7/MatriceZyboZ7.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file H:/5A/CE514/ZyboZ7/MatriceZyboZ7/MatriceZyboZ7.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File H:/5A/CE514/ZyboZ7/MatriceZyboZ7/MatriceZyboZ7.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+generate_target: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 1207.723 ; gain = 116.246
+catch { config_ip_cache -export [get_ips -all design_1_my_matrice_LED_0_0] }
+catch { config_ip_cache -export [get_ips -all design_1_auto_pc_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_0, cache-ID = fe03d9064895f1fb; cache size = 4.851 MB.
+export_ip_user_files -of_objects [get_files H:/5A/CE514/ZyboZ7/MatriceZyboZ7/MatriceZyboZ7.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] H:/5A/CE514/ZyboZ7/MatriceZyboZ7/MatriceZyboZ7.srcs/sources_1/bd/design_1/design_1.bd]
+launch_runs -jobs 6 design_1_my_matrice_LED_0_0_synth_1
+[Wed Nov 22 09:02:50 2023] Launched design_1_my_matrice_LED_0_0_synth_1...
+Run output will be captured here: H:/5A/CE514/ZyboZ7/MatriceZyboZ7/MatriceZyboZ7.runs/design_1_my_matrice_LED_0_0_synth_1/runme.log
+export_simulation -of_objects [get_files H:/5A/CE514/ZyboZ7/MatriceZyboZ7/MatriceZyboZ7.srcs/sources_1/bd/design_1/design_1.bd] -directory H:/5A/CE514/ZyboZ7/MatriceZyboZ7/MatriceZyboZ7.ip_user_files/sim_scripts -ip_user_files_dir H:/5A/CE514/ZyboZ7/MatriceZyboZ7/MatriceZyboZ7.ip_user_files -ipstatic_source_dir H:/5A/CE514/ZyboZ7/MatriceZyboZ7/MatriceZyboZ7.ip_user_files/ipstatic -lib_map_path [list {modelsim=H:/5A/CE514/ZyboZ7/MatriceZyboZ7/MatriceZyboZ7.cache/compile_simlib/modelsim} {questa=H:/5A/CE514/ZyboZ7/MatriceZyboZ7/MatriceZyboZ7.cache/compile_simlib/questa} {riviera=H:/5A/CE514/ZyboZ7/MatriceZyboZ7/MatriceZyboZ7.cache/compile_simlib/riviera} {activehdl=H:/5A/CE514/ZyboZ7/MatriceZyboZ7/MatriceZyboZ7.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory H:/5A/CE514/ZyboZ7/MatriceZyboZ7/MatriceZyboZ7.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Wed Nov 22 09:04:03 2023] Launched design_1_my_matrice_LED_0_0_synth_1, synth_1...
+Run output will be captured here:
+design_1_my_matrice_LED_0_0_synth_1: H:/5A/CE514/ZyboZ7/MatriceZyboZ7/MatriceZyboZ7.runs/design_1_my_matrice_LED_0_0_synth_1/runme.log
+synth_1: H:/5A/CE514/ZyboZ7/MatriceZyboZ7/MatriceZyboZ7.runs/synth_1/runme.log
+[Wed Nov 22 09:04:03 2023] Launched impl_1...
+Run output will be captured here: H:/5A/CE514/ZyboZ7/MatriceZyboZ7/MatriceZyboZ7.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1218.465 ; gain = 4.031
+ipx::edit_ip_in_project -upgrade true -name my_matrice_LED_v1_0_project -directory H:/5A/CE514/ZyboZ7/MatriceZyboZ7/MatriceZyboZ7.tmp/my_matrice_LED_v1_0_project h:/5A/CE514/ip_repo/my_matrice_LED_1.0/component.xml
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'h:/5A/CE514/ip_repo/my_matrice_LED_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'h:/CE515/vivado-library-zmod-v1-2019.1-2'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:20 . Memory (MB): peak = 1256.188 ; gain = 37.723
+update_compile_order -fileset sources_1
